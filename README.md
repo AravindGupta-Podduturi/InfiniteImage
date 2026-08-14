@@ -1,35 +1,135 @@
-# Infinite Image v1.3.0
+# InfiniteImage
 
-A local Windows image conversion and resizing app.
+<p align="center">
+  <img src="infinite_image_logo.png" alt="InfiniteImage Logo" width="500">
+</p>
 
-## Changes in v1.3.0
-- Renamed UI to **Infinite Image**.
-- Added the supplied Infinite Image logo to the sidebar.
-- Improved preview rendering for large, transparent and portrait/landscape images.
-- Improved dark-mode list readability with strong selected/unselected contrast.
-- Single-image Convert now opens **Save As** so you can choose the exact output filename and location.
-- Single-image Resize now opens **Save As** so you can choose the exact output filename and location.
-- Batch jobs continue to use the selected output folder and automatic source-based names.
-- Updated executable, spec and Inno Setup installer names.
+<p align="center">
+  <b>A simple, private Windows image converter and resizer.</b>
+</p>
 
-## Build
-1. Run `build.bat`.
-2. Test `dist\InfiniteImage.exe`.
-3. Open `installer.iss` in Inno Setup and compile it.
-4. Share `installer_output\InfiniteImage_Setup_v1.3.0.exe`.
+<p align="center">
+  Convert • Resize • Preview • Batch Process
+</p>
 
+---
 
-## v1.3.0 UI fix
-- Primary Convert & Save / Resize & Save actions are pinned to the bottom of the workspace and are always visible.
-- Settings are vertically scrollable on smaller screens.
-- Single-image jobs use Save As for the exact output filename.
-- Batch jobs keep automatic output naming.
-- Preview remains visible while settings are scrolled.
+## ✨ Features
 
+### 🖼 Image Conversion
+Convert images between commonly used formats:
 
-## v1.3.0 layout
-- Preview panel has its own independent scrollbar.
-- Conversion/resize settings have their own independent scrollbar.
-- The primary action is pinned to the bottom of the right panel.
-- With one image selected, the primary button is explicitly **Save As…**.
-- With multiple images selected, the primary button becomes **Convert & Save All** or **Resize & Save All**.
+- JPG
+- PNG
+- WEBP
+- BMP
+- TIFF
+- GIF
+- ICO
+
+### 📐 Image Resizing
+
+- Custom width and height
+- Maintain aspect ratio
+- Preset dimensions
+- Resize by percentage
+- File-size based resizing
+
+### 👀 Image Preview
+
+- Preview selected images
+- Supports transparency
+- Handles image orientation
+- View image dimensions and file information
+
+### 📦 Batch Processing
+
+Process multiple images in one operation instead of converting each file individually.
+
+### 💾 Custom Output Names
+
+Choose the output filename and save location instead of being forced to use the original filename.
+
+### 🔒 Local Processing
+
+Your images are processed locally on your computer.
+
+No image uploads to a remote server are required.
+
+---
+
+## 🖥️ Download
+
+The easiest way to use InfiniteImage is to download the latest Windows installer from the **Releases** section.
+
+### Windows
+
+1. Download `InfiniteImage_Setup_v1.3.0.exe`
+2. Run the installer
+3. Follow the installation instructions
+4. Launch **Infinite Image**
+5. Start converting or resizing your images
+
+> No Python installation is required when using the Windows installer.
+
+---
+
+## 📸 Screenshots
+
+Screenshots of the application can be added here.
+
+---
+
+## 🛠️ For Developers
+
+### Requirements
+
+- Python 3.x
+- Pillow
+- PyInstaller
+
+### Install
+
+Clone the repository and open the project folder.
+
+Install the required packages:
+
+```bash
+pip install -r requirements.txt
+
+### Run from source
+python main.py
+
+### Build the Application
+The project includes a Windows build script.
+
+###Run:
+
+build.bat
+
+### The script:
+
+### Creates the Python virtual environment if required
+###Installs the required packages
+### Removes previous build files
+###Runs PyInstaller
+### Creates InfiniteImage.exe
+
+### The executable will be generated in:
+
+dist/InfiniteImage.exe
+📦 Build the Windows Installer
+
+### The project uses Inno Setup for creating the Windows installer.
+
+### The installer configuration is provided in:
+
+installer.iss
+
+## The generated installer is placed in:
+
+installer_output/
+
+Project
+
+### InfiniteImage is a Windows desktop application designed to provide convenient image conversion and resizing tools through a simple graphical interface.
