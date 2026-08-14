@@ -12,6 +12,11 @@
   Convert • Resize • Preview • Batch Process
 </p>
 
+<p align="center">
+  <a href="../../releases/latest">
+    <strong>⬇️ Download for Windows</strong>
+  </a>
+</p>
 ---
 
 ## ✨ Features
@@ -88,6 +93,11 @@ The easiest way to use InfiniteImage is to download the latest Windows installer
 
 ![InfiniteImage Resize](screenshots/resize.png)
 ---
+
+## 📄 License
+
+InfiniteImage is licensed under the MIT License.
+See the [LICENSE](LICENSE) file for details.
 
 ## 🛠️ For Developers
 
