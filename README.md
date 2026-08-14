@@ -19,6 +19,21 @@
 </p>
 ---
 
+## 📌 About
+
+InfiniteImage is a Windows desktop application for converting and resizing images through a simple graphical interface.
+
+It is designed to make common image-processing tasks easy without requiring users to use command-line tools or online image-processing websites.
+
+
+### Why InfiniteImage?
+
+- 🔒 **Private** — images are processed locally
+- ⚡ **Simple** — no complicated setup for Windows users
+- 📦 **Batch processing** — work with multiple images
+- 💾 **Flexible output** — choose output names and locations
+- 🖥️ **Desktop application** — no browser required
+
 ## ✨ Features
 
 ### 🖼 Image Conversion
@@ -63,21 +78,90 @@ No image uploads to a remote server are required.
 
 ---
 
-## 🖥️ Download
+## 🖥️ Download & Install
 
-The easiest way to use InfiniteImage is to download the latest Windows installer from the **Releases** section.
+### For Windows Users
 
-### Windows
+You do **not** need Python, Git, VS Code, or any programming tools to use InfiniteImage.
 
-1. Download `InfiniteImage_Setup_v1.3.0.exe`
-2. Run the installer
-3. Follow the installation instructions
-4. Launch **Infinite Image**
-5. Start converting or resizing your images
+#### 1. Download
 
-> No Python installation is required when using the Windows installer.
+Go to the latest release:
+
+**[⬇️ Download InfiniteImage for Windows](../../releases/latest)**
+
+Under **Assets**, download:
+
+```text
+InfiniteImage_Setup_v1.3.0.exe 
+```
+
+
+### 2. Install
+
+Once the download is complete:
+
+Open InfiniteImage_Setup_v1.3.0.exe
+Follow the installation wizard
+Choose the installation location if required
+Complete the installation
+
+### 3. Launch
+
+After installation, launch Infinite Image from the Start Menu or desktop shortcut.
+
+### 4. Start using InfiniteImage
+
+You can now:
+
+Convert images between formats
+Resize images
+Preview images
+Process multiple images
+Choose custom output filenames
+Control output file size
+
+Your images are processed locally on your computer.
+
+
+## 👨‍💻 For Developers
+
+If you want to run or modify InfiniteImage from source, you will need:
+
+- Python 3.x
+- Git
+- A code editor such as VS Code
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/InfiniteImage.git
+cd InfiniteImage
+
+Replace YOUR-USERNAME with your GitHub username.
+```
+
+### 2. Install dependencies
+
+pip install -r requirements.txt
+
+### 3. Run InfiniteImage
+python main.py
+
+### 4. Build the executable
+
+On Windows:
+
+build.bat
+
+The executable will be created in:
+
+dist/InfiniteImage.exe
+
+
 
 ---
+
 
 ## 📸 Screenshots
 
@@ -99,56 +183,4 @@ The easiest way to use InfiniteImage is to download the latest Windows installer
 InfiniteImage is licensed under the MIT License.
 See the [LICENSE](LICENSE) file for details.
 
-## 🛠️ For Developers
 
-### Requirements
-
-- Python 3.x
-- Pillow
-- PyInstaller
-
-### Install
-
-Clone the repository and open the project folder.
-
-Install the required packages:
-
-```bash
-pip install -r requirements.txt
-
-### Run from source
-python main.py
-
-### Build the Application
-The project includes a Windows build script.
-
-###Run:
-
-build.bat
-
-### The script:
-
-### Creates the Python virtual environment if required
-###Installs the required packages
-### Removes previous build files
-###Runs PyInstaller
-### Creates InfiniteImage.exe
-
-### The executable will be generated in:
-
-dist/InfiniteImage.exe
-📦 Build the Windows Installer
-
-### The project uses Inno Setup for creating the Windows installer.
-
-### The installer configuration is provided in:
-
-installer.iss
-
-## The generated installer is placed in:
-
-installer_output/
-
-Project
-
-### InfiniteImage is a Windows desktop application designed to provide convenient image conversion and resizing tools through a simple graphical interface.
