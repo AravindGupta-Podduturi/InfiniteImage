@@ -176,6 +176,8 @@ dist/InfiniteImage.exe
 ### Image Resizing
 
 ![InfiniteImage Resize](screenshots/resize.png)
+
+
 ---
 
 ## 📄 License
